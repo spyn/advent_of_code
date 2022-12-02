@@ -10,4 +10,13 @@ with open('1.txt') as f:
         else:
             elvenTotal = elvenTotal + int(line.rstrip())
 
-print(sorted(elven.items(), key=lambda item: item[1], reverse=True)[:1])
+# part 1
+p1 = (sorted(elven.items(), key=lambda item: item[1], reverse=True))
+print(p1[:1])
+
+# part 2
+p2 = p1[:3]
+p2f = 0
+for k,v in p2:
+    p2f = p2f+v
+print(p2f)
